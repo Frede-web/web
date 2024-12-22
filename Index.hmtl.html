@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Discos Duros</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #e3f2fd, #90caf9);
+        text-align: center;
+        color: #333;
+      }
+
+      header {
+        background-color: #1565c0;
+        color: white;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 1rem;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      header nav a:hover {
+        color: #90caf9;
+      }
+
+      main {
+        padding: 2rem;
+      }
+
+      main p {
+        margin: 1rem auto;
+        max-width: 600px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      .card {
+        display: inline-block;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 1.5rem;
+        max-width: 300px;
+        vertical-align: top;
+      }
+
+      .card h2 {
+        color: #1565c0;
+      }
+
+      .card.full-width {
+        display: block;
+        max-width: 90%;
+        width: 90%;
+        margin: 2rem auto;
+        text-align: left;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      th {
+        background-color: #1565c0;
+        color: white;
+      }
+
+      footer {
+        background-color: #0d47a1;
+        color: white;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: #90caf9;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <header>
+      <h1><b>Discos Duros y sus Tipos</b></h1>
+      <nav> <b><a href="#hdd">HDD</a> <a href="#ssd">SSD</a> <a href="#nvme">NVMe</a></b>
+      </nav>
+    </header>
+    <main>
+      <p><i><u><b>Los discos duros son dispositivos esenciales para almacenar
+              datos en cualquier sistema informático.&nbsp;</b></u></i></p>
+      <div class="card" id="hdd">
+        <h2><strong>HDD (Disco Duro Tradicional)</strong></h2>
+        <p>Los HDD son dispositivos mecánicos con platos giratorios. Son
+          económicos y ofrecen grandes capacidades de almacenamiento.</p>
+      </div>
+      <div class="card" id="ssd">
+        <h2><strong>SSD (Unidad de Estado Sólido)</strong></h2>
+        <p>Los SSD no tienen partes móviles y son significativamente más rápidos
+          que los HDD. Son ideales para mejorar el rendimiento del sistema.</p>
+      </div>
+      <div class="card" id="nvme">
+        <h2><strong>NVMe</strong></h2>
+        <p>Las unidades NVMe son SSD ultrarrápidos que utilizan la interfaz
+          PCIe. Ofrecen velocidades de lectura y escritura impresionantes.</p>
+      </div>
+      <div class="card" id="externos">
+        <h2><strong>DISCOS DUROS EXTERNOS</strong></h2>
+        <p>Pueden ser HDD o SSD, diseñados específicamente para la conexión con
+          USB.</p>
+      </div>
+      <div class="card" id="hibridos">
+        <h2><strong>DISCOS HÍBRIDOS</strong></h2>
+        <p>Combinan un HDD tradicional con una pequeña cantidad de memoria SSD
+          para almacenamiento en caché.</p>
+      </div>
+      <div class="card full-width" id="ventajas-y-desventajas">
+        <h2><strong>VENTAJAS Y DESVENTAJAS DE LOS TIPOS DE DISCO DUROS</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th>TIPOS</th>
+              <th>VENTAJAS</th>
+              <th>DESVENTAJAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HDD</td>
+              <td>
+                <ul>
+                  <li>Alta capacidad de almacenamiento a bajo costo.</li>
+                  <li>Durabilidad de uso prolongado.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Lentos en comparación con tecnologías modernas.</li>
+                  <li>Susceptibles a daños físicos.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>SSD</td>
+              <td>
+                <ul>
+                  <li>Más rápidas que los HDD.</li>
+                  <li>Resistencia a fuertes golpes.</li>
+                  <li>Consumen menos energía.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Costo por GB más alto que los HDD.</li>
+                  <li>Vida útil limitada por el número de escritura.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>NVMe</td>
+              <td>
+                <ul>
+                  <li>Velocidades extremadamente altas.</li>
+                  <li>Baja latencia.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Precio más alto.</li>
+                  <li>Requiere hardware específico.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Híbridos</td>
+              <td>
+                <ul>
+                  <li>Buen equilibrio entre capacidad (HDD) y velocidad (SSD).</li>
+                  <li>Más asequibles que los SSD.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Menos rápidos que un SSD dedicado.</li>
+                  <li>Menos capacidad que un HDD.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Externos</td>
+              <td>
+                <ul>
+                  <li>Portátiles y fáciles de usar.</li>
+                  <li>Amplían el almacenamiento sin necesidad de abrir el
+                    dispositivo.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Más vulnerables al daño físico debido a su uso portátil.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <title>Tipos de Discos Duros</title>
+      <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #e3f2fd, #90caf9);
+        text-align: center;
+        color: #333;
+      }
+
+      header {
+        background-color: #1565c0;
+        color: white;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 1rem;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      header nav a:hover {
+        color: #90caf9;
+      }
+
+      main {
+        padding: 2rem;
+      }
+
+      main p {
+        margin: 1rem auto;
+        max-width: 600px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      .card {
+        display: inline-block;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 1.5rem;
+        max-width: 300px;
+        vertical-align: top;
+      }
+
+      .card h2 {
+        color: #1565c0;
+      }
+
+      .card.full-width {
+        display: block;
+        max-width: 90%;
+        width: 90%;
+        margin: 2rem auto;
+        text-align: left;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+      }
+
+      th, td {
+        border: 1px solid #ddd;
+        padding: 0.5rem;
+        text-align: left;
+      }
+
+      th {
+        background-color: #1565c0;
+        color: white;
+      }
+
+      .comparison-table {
+        width: 100%;
+        margin: 2rem 0;
+        border: 2px solid #333;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .comparison-table table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .comparison-table th, .comparison-table td {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .comparison-table th {
+        background-color: #444;
+        color: white;
+      }
+
+      .comparison-table td {
+        background-color: #f9f9f9;
+      }
+
+      footer {
+        background-color: #0d47a1;
+        color: white;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: #90caf9;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+      <header>
+        <h1><b>PEQUEÑA COMPARACIÓN DE LOS TIPOS DE DISCO DURO</b></h1>
+        <nav> <b><a href="#hdd">HDD</a> <a href="#ssd">SSD</a> <a href="#nvme">NVMe</a></b><a
+
+            href="#nvme">HIBRIDO</a> <a href="#nvme">EXTERNO</a> </nav>
+      </header>
+      <main>
+        <div class="card full-width comparison-table">
+          <h2><strong>COMPARACIÓN RESUMIDA:</strong></h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo</th>
+                <th>Velocidad</th>
+                <th>Capacidad</th>
+                <th>Costo</th>
+                <th>Durabilidad</th>
+                <th>Uso Común</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HDD</td>
+                <td>Baja</td>
+                <td>Muy Alta</td>
+                <td>Bajo</td>
+                <td>Moderada</td>
+                <td>Almacenamiento masivo</td>
+              </tr>
+              <tr>
+                <td>SSD</td>
+                <td>Alta</td>
+                <td>Media/Alta</td>
+                <td>Medio/Alto</td>
+                <td>Alta</td>
+                <td>Sistemas operativos</td>
+              </tr>
+              <tr>
+                <td>SSHD</td>
+                <td>Media</td>
+                <td>Alta</td>
+                <td>Medio</td>
+                <td>Moderada</td>
+                <td>Uso general</td>
+              </tr>
+              <tr>
+                <td>NVMe</td>
+                <td>Muy Alta</td>
+                <td>Media/Alta</td>
+                <td>Alto</td>
+                <td>Alta</td>
+                <td>Alto rendimiento</td>
+              </tr>
+              <tr>
+                <td>Externos</td>
+                <td>Variable</td>
+                <td>Variable</td>
+                <td>Variable</td>
+                <td>Moderada</td>
+                <td>Backup y portabilidad</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Botón con Link</title>
+      <style>
+    .button-link {
+      display: inline-block;
+      background-color: #1565c0;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-link:hover {
+      background-color: #0d47a1;
+      transform: scale(1.05);
+    }
+
+    .button-link:active {
+      transform: scale(1);
+    }
+  </style>
+      <p>Haz clic en el botón para leer mas información sobre los tipos de disco
+        duro:</p>
+      <a href="https://ecoportatil.es/blog/tipos-disco-duro" target="_blank" class="button-link">Aprender
+        más</a> <a href="https://www.pccomponentes.com/tipos-de-discos-duros?srsltid=AfmBOop9Z81nAqVIQrOaghLIyceyOaTt17kG1Q6ogrPYIJ9s8MY9Cf0x"
+
+        target="_blank" class="button-link">Saber que mas hay</a> <a href="https://www.xataka.com/basics/hdd-vs-ssd"
+
+        target="_blank" class="button-link">Diferencias entre SSD y HDD</a>
+      <footer>
+        <p>Grupo N5</p>
+      </footer>
+    </main>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        a {
+            display: inline-block;
+            margin: 1em auto;
+            padding: 1em 2em;
+            text-decoration: none;
+            color: white;
+            background-color: #0073e6;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            background-color: #005bb5;
+        }
+    </style>
+    <header> </header>
+    <main>
+      <p>Haz clic en el botón de abajo para continuar a la siguiente página.</p>
+      <a href="continuacion.html">Ir a la Continuación</a> </main>
+  </body>
+</html>
